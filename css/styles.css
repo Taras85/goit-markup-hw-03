@@ -72,6 +72,11 @@ body {
 }
 
 /* Шапка сайта */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -106,18 +111,26 @@ body {
 
 /* Головний блок головної сторінки */
 /* Блок банер */
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+  outline: 2px solid tomato;
+  outline-offset: -2px;
+}
 .base-baner {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--banner-footer-background-color);
+  text-align: center;
 }
 .baner-title {
-  width: 696px;
-  min-height: 120px;
-  font-weight: 900;
+  /* width: 696px; */
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
+  /* text-align: center;  */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-body-color-font-baner);
@@ -143,8 +156,7 @@ body {
 
 /* Блок наші пріоритети */
 .base-priorities {
-  padding-top: 94px;
-  padding-bottom: 94px;
+padding-top: 94px;
 }
 .priorities-caption {
   margin-bottom: 10px;
@@ -164,20 +176,29 @@ body {
 
 .directions-title,
 .team-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color-title-h2-h3);
+  margin-bottom: 50px;
+}
+.base-directions {
+padding-top: 94px;
 }
 
 /* Блок наша команда */
 .base-team {
   background-color: var(--team-background-color);
+  padding-top: 94px;
 }
 
 .team-item {
   background-color: var(--background-body-color-font-baner);
+}
+.team-item img {
+  margin-bottom: 30px;
 }
 
 .team-full-name {
@@ -187,6 +208,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color-title-h2-h3);
+  margin-bottom: 10px;
 }
 .team-post {
   font-size: 16px;
@@ -198,6 +220,12 @@ body {
 /* Підвал сайту */
 footer {
   background-color: var(--banner-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.adds-footer {
+  padding-bottom: 0px;
+  margin-top: 20px;
 }
 address {
   font-style: normal;
@@ -243,12 +271,17 @@ address {
   cursor: pointer;
 }
 /* Блок галереї */
+.gallery-link img {
+  margin-bottom: 20px;
+}
+
 .gallery-title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--font-color-title-h2-h3);
+  margin-bottom: 4px;
 }
 .gallery-type {
   font-weight: 400;
