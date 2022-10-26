@@ -21,6 +21,38 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+/* Reset */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+/* end reset */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-body-color-font-baner);
+  color: var(--font-color-paragraph);
+}
 
 .filter-btn:hover,
 .filter-btn:focus,
@@ -37,20 +69,6 @@
 .baner-btn:hover,
 .baner-btn:focus {
   background-color: var(--secondary-btn);
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--background-body-color-font-baner);
-  color: var(--font-color-paragraph);
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 /* Шапка сайта */
@@ -89,9 +107,13 @@ body {
 /* Головний блок головної сторінки */
 /* Блок банер */
 .base-baner {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--banner-footer-background-color);
 }
 .baner-title {
+  width: 696px;
+  min-height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -99,35 +121,45 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-body-color-font-baner);
+  margin-bottom: 30px;
 }
 .baner-btn {
+  min-width: 216px;
+  min-height: 50px;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
+  display: inline-block;
   justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  border: none;
   letter-spacing: 0.06em;
   color: var(--background-body-color-font-baner);
   background-color: var(--accent-color-btn);
+  border: 1px solid transparent;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 /* Блок наші пріоритети */
+.base-priorities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .priorities-caption {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--font-color-title-h2-h3);
+  /* display: inline-block; */
 }
 .priorities-paragraph {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  /* display: inline-block; */
 }
 
 .directions-title,
