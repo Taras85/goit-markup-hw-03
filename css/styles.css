@@ -1,0 +1,227 @@
+:root {
+  --font-color-paragraph: #757575;
+  --background-body-color-font-baner: #ffffff;
+  --accent-color-btn: #2196f3;
+  --font-secondary-logo: #000000;
+  --banner-footer-background-color: #2f303a;
+  --font-color-title-h2-h3: #212121;
+  --team-background-color: #f5f4fa;
+  --secondary-btn: #188ce8;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.nav-link:hover,
+.nav-link:focus,
+.header-contacts:hover,
+.header-contacts:focus,
+.contact-footer:hover,
+.contact-footer:focus,
+.adds-direction:hover,
+.adds-direction:focus {
+  color: #2196f3;
+}
+.baner-btn:hover,
+.baner-btn:focus {
+  background-color: var(--secondary-btn);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-body-color-font-baner);
+  color: var(--font-color-paragraph);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Шапка сайта */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color-btn);
+}
+.logo-header {
+  color: var(--font-secondary-logo);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--font-color-title-h2-h3);
+}
+
+.site-nav .current {
+  color: var(--accent-color-btn);
+}
+
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--font-color-paragraph);
+}
+
+/* Головний блок головної сторінки */
+/* Блок банер */
+.base-baner {
+  background-color: var(--banner-footer-background-color);
+}
+.baner-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-body-color-font-baner);
+}
+.baner-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border: none;
+  letter-spacing: 0.06em;
+  color: var(--background-body-color-font-baner);
+  background-color: var(--accent-color-btn);
+  cursor: pointer;
+}
+
+/* Блок наші пріоритети */
+.priorities-caption {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-color-title-h2-h3);
+}
+.priorities-paragraph {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.directions-title,
+.team-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-color-title-h2-h3);
+}
+
+/* Блок наша команда */
+.base-team {
+  background-color: var(--team-background-color);
+}
+
+.team-item {
+  background-color: var(--background-body-color-font-baner);
+}
+
+.team-full-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-color-title-h2-h3);
+}
+.team-post {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Підвал сайту */
+footer {
+  background-color: var(--banner-footer-background-color);
+}
+address {
+  font-style: normal;
+}
+.logo-footer {
+  color: var(--background-body-color-font-baner);
+}
+.adds-direction {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--background-body-color-font-baner);
+}
+.contact-footer {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Галерея основна частина*/
+/* Блок фільтру галереї */
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color-btn);
+  color: var(--background-body-color-font-baner);
+}
+
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  letter-spacing: 0.03em;
+  background-color: var(--team-background-color);
+  color: var(--font-color-title-h2-h3);
+  cursor: pointer;
+}
+/* Блок галереї */
+.gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--font-color-title-h2-h3);
+}
+.gallery-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
