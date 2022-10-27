@@ -8,7 +8,7 @@
   --team-background-color: #f5f4fa;
   --secondary-btn: #188ce8;
 }
-
+/* Reset */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -21,7 +21,7 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-/* Reset */
+
 .list {
   list-style: none;
   margin: 0;
@@ -48,6 +48,76 @@ img {
 
 /* end reset */
 
+/* Start блочна модель */
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  outline: 2px solid tomato;
+  outline-offset: -2px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* .page-header .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+} */
+/* .base-baner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+ } */
+/* .baner-btn {
+  min-width: 216px;
+  min-height: 50px;
+  padding: 10px 32px;
+} */
+/* .base-priorities {
+  padding-top: 94px;
+} */
+/* .priorities-caption {
+  margin-bottom: 10px;
+} */
+/* .directions-title,
+.team-title {
+  margin-bottom: 50px;
+}*/
+/* .base-directions {
+  padding-top: 94px;
+} */
+/* 
+.base-team {
+  background-color: var(--team-background-color);
+  padding-top: 94px;
+}*/
+/* .team-item img {
+  margin-bottom: 30px;
+} */
+/* .team-full-name {
+  margin-bottom: 10px;
+} */
+/* footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
+
+/* footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+} */
+/* .gallery-link img {
+  margin-bottom: 20px;
+} */
+/* .gallery-title {
+  margin-bottom: 4px;
+} */
+
+/* end блочна модель*/
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-body-color-font-baner);
@@ -72,10 +142,6 @@ body {
 }
 
 /* Шапка сайта */
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -111,23 +177,15 @@ body {
 
 /* Головний блок головної сторінки */
 /* Блок банер */
-.container {
-  width: 1200px;
-  margin: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  
-  outline: 2px solid tomato;
-  outline-offset: -2px;
-}
+
 .base-baner {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
   background-color: var(--banner-footer-background-color);
   text-align: center;
 }
 .baner-title {
-  /* width: 696px; */
+  width: 696px;
   font-size: 44px;
   line-height: calc(60 / 44);
   /* text-align: center;  */
@@ -137,9 +195,6 @@ body {
   margin-bottom: 30px;
 }
 .baner-btn {
-  min-width: 216px;
-  min-height: 50px;
-  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -155,11 +210,9 @@ body {
 }
 
 /* Блок наші пріоритети */
-.base-priorities {
-padding-top: 94px;
-}
+
 .priorities-caption {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -176,7 +229,7 @@ padding-top: 94px;
 
 .directions-title,
 .team-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -184,21 +237,15 @@ padding-top: 94px;
   color: var(--font-color-title-h2-h3);
   margin-bottom: 50px;
 }
-.base-directions {
-padding-top: 94px;
-}
 
 /* Блок наша команда */
 .base-team {
   background-color: var(--team-background-color);
-  padding-top: 94px;
+  /* padding-top: 94px; */
 }
 
 .team-item {
   background-color: var(--background-body-color-font-baner);
-}
-.team-item img {
-  margin-bottom: 30px;
 }
 
 .team-full-name {
@@ -220,13 +267,8 @@ padding-top: 94px;
 /* Підвал сайту */
 footer {
   background-color: var(--banner-footer-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
-.adds-footer {
-  padding-bottom: 0px;
-  margin-top: 20px;
-}
+
 address {
   font-style: normal;
 }
@@ -271,9 +313,6 @@ address {
   cursor: pointer;
 }
 /* Блок галереї */
-.gallery-link img {
-  margin-bottom: 20px;
-}
 
 .gallery-title {
   font-weight: 700;
@@ -281,7 +320,7 @@ address {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--font-color-title-h2-h3);
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
 }
 .gallery-type {
   font-weight: 400;
