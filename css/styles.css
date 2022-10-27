@@ -63,58 +63,51 @@ img {
   padding-bottom: 94px;
 }
 
-/* .page-header .container {
+.page-header > .container {
   padding-top: 24px;
   padding-bottom: 25px;
-} */
-/* .base-baner {
-  padding-top: 200px;
-  padding-bottom: 200px;
- } */
-/* .baner-btn {
+}
+main > .base-baner > .container {
+  padding-top: 106px;
+  padding-bottom: 106px;
+}
+.container > .baner-btn {
   min-width: 216px;
   min-height: 50px;
   padding: 10px 32px;
-} */
-/* .base-priorities {
-  padding-top: 94px;
-} */
-/* .priorities-caption {
+}
+
+.container > .priorities-list > .priorities-item > .priorities-caption,
+.container > .team-list > .team-item > .team-full-name {
   margin-bottom: 10px;
-} */
-/* .directions-title,
-.team-title {
+}
+.container > .directions-title,
+.container > .team-title {
   margin-bottom: 50px;
-}*/
-/* .base-directions {
-  padding-top: 94px;
-} */
-/* 
-.base-team {
-  background-color: var(--team-background-color);
-  padding-top: 94px;
-}*/
-/* .team-item img {
+}
+
+.container > .team-list > .team-item > .team-foto {
   margin-bottom: 30px;
-} */
-/* .team-full-name {
-  margin-bottom: 10px;
-} */
-/* footer {
+}
+
+footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
-} */
+}
 
-/* footer .logo {
+footer > .container > .logo {
   display: inline-block;
   margin-bottom: 20px;
-} */
-/* .gallery-link img {
+}
+
+.container > .portfolio-gallery > .gallery-item > .gallery-link img {
   margin-bottom: 20px;
-} */
-/* .gallery-title {
+}
+
+.container > .portfolio-gallery > .gallery-item > .gallery-link h2 {
+  display: inline-block;
   margin-bottom: 4px;
-} */
+}
 
 /* end блочна модель*/
 
@@ -179,16 +172,12 @@ body {
 /* Блок банер */
 
 .base-baner {
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
   background-color: var(--banner-footer-background-color);
-  text-align: center;
 }
 .baner-title {
   width: 696px;
   font-size: 44px;
   line-height: calc(60 / 44);
-  /* text-align: center;  */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-body-color-font-baner);
@@ -212,13 +201,11 @@ body {
 /* Блок наші пріоритети */
 
 .priorities-caption {
-  /* margin-bottom: 10px; */
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--font-color-title-h2-h3);
-  /* display: inline-block; */
 }
 .priorities-paragraph {
   font-size: 14px;
@@ -235,7 +222,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color-title-h2-h3);
-  margin-bottom: 50px;
 }
 
 /* Блок наша команда */
@@ -255,7 +241,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color-title-h2-h3);
-  margin-bottom: 10px;
 }
 .team-post {
   font-size: 16px;
