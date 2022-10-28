@@ -8,9 +8,10 @@
   --team-background-color: #f5f4fa;
   --secondary-btn: #188ce8;
   --header-border-color: #ececec;
+  --border-gllery-content: #eeeeee;
   --indent-nav: 50px;
   --indent-main: 30px;
-  --items: 3;
+  --items: 4;
 }
 /* Reset */
 .visually-hidden {
@@ -25,18 +26,15 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .link {
   text-decoration: none;
   color: currentColor;
 }
-
 h1,
 h2,
 h3,
@@ -49,7 +47,6 @@ p {
 img {
   display: block;
 }
-
 /* end reset */
 
 /* Start блочна модель */
@@ -59,21 +56,21 @@ img {
   padding-right: 15px;
   padding-left: 15px;
 
-  outline: 2px solid tomato;
-  outline-offset: -2px;
+  /* outline: 2px solid tomato;
+  outline-offset: -2px; */
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.grid-set {
+/* налаштування сітки для відображення */
+.grid-set-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent-main);
 }
 .grid-set-item {
-  flex-basis: calc(100% - var(--ident-main) * (var(--items) - 1) / (var(--items)));
+  flex-basis: calc((100% - (var(--indent-main) * ((var(--items)) - 1))) / var(--items));
 }
 
 body {
@@ -82,8 +79,6 @@ body {
   color: var(--font-color-paragraph);
 }
 
-.filter-btn:hover,
-.filter-btn:focus,
 .nav-link:hover,
 .nav-link:focus,
 .header-contacts:hover,
@@ -103,12 +98,10 @@ body {
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
 }
-
 .container-page-header {
   display: flex;
   align-items: center;
 }
-
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -116,42 +109,35 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color-btn);
+  margin-right: 92px;
 }
 .logo-header {
   color: var(--font-secondary-logo);
 }
-.nav-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 .site-nav {
   display: flex;
   align-items: center;
-  margin-left: 92px;
 }
-
 .site-nav .nav-item:not(:last-child) {
   margin-right: var(--indent-nav);
 }
-
 .container-header-contacts {
   display: flex;
   gap: var(--indent-nav);
   margin-left: auto;
 }
-
 .nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--font-color-title-h2-h3);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
 .site-nav > .nav-item > .current {
   color: var(--accent-color-btn);
 }
-
 .header-contacts {
   font-weight: 500;
   font-size: 14px;
@@ -202,11 +188,6 @@ body {
 
 /* Блок наші пріоритети */
 
-.priorities-list {
-  display: flex;
-  gap: 30px;
-}
-
 .priorities-caption {
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -221,6 +202,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* чим ми займаємось */
+
+.base-directions {
+  padding-top: 0px;
+}
+
+.container-base-directions {
+  --items: 3;
+}
+
 .directions-title,
 .team-title {
   font-size: 36px;
@@ -230,22 +221,27 @@ body {
   color: var(--font-color-title-h2-h3);
   margin-bottom: var(--indent-nav);
 }
-.directions-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent-main);
-}
 
 /* Блок наша команда */
+
+.container-base-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+}
 .base-team {
   background-color: var(--team-background-color);
-  /* padding-top: 94px; */
 }
-
+.team-item > img {
+  margin-bottom: var(--indent-main);
+}
 .team-item {
   background-color: var(--background-body-color-font-baner);
 }
-
 .team-full-name {
   font-weight: 500;
   font-size: 16px;
@@ -253,21 +249,33 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color-title-h2-h3);
+  margin-bottom: 10px;
 }
 .team-post {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: var(--indent-main);
 }
 
 /* Підвал сайту */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
 footer {
   background-color: var(--banner-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+.footer-container > .logo {
+  margin: 0;
+}
 address {
   font-style: normal;
+  padding-top: 20px;
 }
 .logo-footer {
   color: var(--background-body-color-font-baner);
@@ -277,6 +285,7 @@ address {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--background-body-color-font-baner);
+  margin-bottom: 9px;
 }
 .contact-footer {
   font-size: 14px;
@@ -284,45 +293,70 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-contacts-mail {
+  margin-bottom: 9px;
+}
 
 /* Галерея основна частина*/
 /* Блок фільтру галереї */
 
+.container-portfolio-pager {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.portfolio-filter .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color-btn);
   color: var(--background-body-color-font-baner);
 }
-
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
+  min-width: 73px;
+  height: 38px;
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 4px;
   letter-spacing: 0.03em;
   background-color: var(--team-background-color);
   color: var(--font-color-title-h2-h3);
   cursor: pointer;
 }
+
 /* Блок галереї */
 
+.container-gllery-content {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-gllery-content);
+  border-right: 1px solid var(--border-gllery-content);
+  border-bottom: 1px solid var(--border-gllery-content);
+}
 .gallery-title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--font-color-title-h2-h3);
-  /* margin-bottom: 4px; */
 }
 .gallery-type {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--font-color-paragraph);
 }
