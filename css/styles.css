@@ -160,6 +160,8 @@ body {
 }
 .base-baner {
   background-color: var(--banner-footer-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .baner-title {
   text-align: center;
@@ -287,7 +289,7 @@ address {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--background-body-color-font-baner);
-  margin-bottom: 9px;
+  /* margin-bottom: 9px; */
 }
 .contact-footer {
   font-size: 14px;
@@ -295,9 +297,13 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-/* .footer-contacts-mail {
-  margin-bottom: 9px;
-} */
+.adds-list {
+  display: flex;
+  flex-direction: column;
+}
+.adds-item:first-child {
+margin-bottom: 9px;
+}
 
 /* Галерея основна частина*/
 /* Блок фільтру галереї */
