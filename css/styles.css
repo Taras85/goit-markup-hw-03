@@ -97,6 +97,7 @@ body {
 /* Шапка сайта */
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
+  
 }
 .container-page-header {
   display: flex;
@@ -117,6 +118,7 @@ body {
 .site-nav {
   display: flex;
   align-items: center;
+
 }
 .site-nav .nav-item:not(:last-child) {
   margin-right: var(--indent-nav);
@@ -293,9 +295,9 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contacts-mail {
+/* .footer-contacts-mail {
   margin-bottom: 9px;
-}
+} */
 
 /* Галерея основна частина*/
 /* Блок фільтру галереї */
