@@ -97,7 +97,6 @@ body {
 /* Шапка сайта */
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
-  
 }
 .container-page-header {
   display: flex;
@@ -118,7 +117,6 @@ body {
 .site-nav {
   display: flex;
   align-items: center;
-
 }
 .site-nav .nav-item:not(:last-child) {
   margin-right: var(--indent-nav);
@@ -228,11 +226,6 @@ body {
 
 /* Блок наша команда */
 
-.container-base-team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .team-list {
   display: flex;
   align-items: center;
@@ -240,12 +233,16 @@ body {
 .base-team {
   background-color: var(--team-background-color);
 }
-.team-item > img {
-  margin-bottom: var(--indent-main);
-}
+
 .team-item {
   background-color: var(--background-body-color-font-baner);
 }
+
+.container-team-content {
+  padding-top: var(--indent-main);
+  padding-bottom: var(--indent-main);
+}
+
 .team-full-name {
   font-weight: 500;
   font-size: 16px;
@@ -260,7 +257,6 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: var(--indent-main);
 }
 
 /* Підвал сайту */
@@ -301,8 +297,8 @@ address {
   display: flex;
   flex-direction: column;
 }
-.adds-item:first-child {
-margin-bottom: 9px;
+.adds-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Галерея основна частина*/
@@ -315,7 +311,7 @@ margin-bottom: 9px;
 .portfolio-filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  padding-bottom: var(--indent-nav);
 }
 .portfolio-filter .filter-item:not(:last-child) {
   margin-right: 8px;
